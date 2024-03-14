@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card .wish {
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+}
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <div class="wish">Happy birthday {{name}}</div>
+            <img src="{{image}}" alt="Birthday Image">
+            <div class="wish">{{message}}</div>
+        </div>
+    </body>
+</html>
